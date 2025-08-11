@@ -19,9 +19,9 @@ const Hero = () => {
         <div className="flex items-center">
           <div className="text-left animate-fadeInLeft max-w-4xl">
             <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-              Smart <span className="text-blue-400">Automation</span>
+              VISIOMATIC <br /> <span className="text-blue-400">SMART HOME</span>
               <br />
-              Solutions
+              {/* HOME */}
             </h1>
 
             <p className="text-xl text-gray-200 mb-8 leading-relaxed">
