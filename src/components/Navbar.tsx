@@ -22,7 +22,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Contact', href: '#contact' }
+    // { name: 'Contact', href: '#contact' }
   ];
 
   return (
@@ -62,9 +62,9 @@ const Navbar = () => {
                 {item.name}
               </a>
             ))}
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
-              Get Quote
-            </button>
+            <a href="#contact" className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 transform hover:scale-105">
+              Contact
+            </a>
           </div>
 
           {/* Mobile menu button */}

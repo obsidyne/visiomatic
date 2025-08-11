@@ -90,7 +90,7 @@ const Contact = () => {
               </div> */}
             </div>
             
-            <div className="mt-8 p-6 bg-blue-50 rounded-xl">
+            {/* <div className="mt-8 p-6 bg-blue-50 rounded-xl">
               <h4 className="text-lg font-semibold text-gray-900 mb-2">Why Choose Visiomatic?</h4>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center">
@@ -110,7 +110,7 @@ const Contact = () => {
                   2-year warranty on all installations
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
           
           {/* Contact Form */}
