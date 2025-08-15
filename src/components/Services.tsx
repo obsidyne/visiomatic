@@ -1,45 +1,71 @@
 import React from 'react';
-import { Camera, Shield, Lock, Zap, Monitor, Home } from 'lucide-react';
+import { Camera, Shield, Lock, Zap,  Film , Coffee , Monitor, Home } from 'lucide-react';
 
 const Services = () => {
-  const services = [
-    {
-      icon: Camera,
-      title: 'CCTV Systems',
-      description: 'Advanced surveillance systems with HD cameras, night vision, and remote monitoring capabilities.',
-      features: ['HD/4K Cameras', 'Night Vision', 'Remote Access', 'Motion Detection']
-    },
-    {
-      icon: Shield,
-      title: 'Security Systems',
-      description: 'Comprehensive security solutions including alarms, sensors, and integrated monitoring systems.',
-      features: ['Burglar Alarms', 'Motion Sensors', 'Door/Window Sensors', '24/7 Monitoring']
-    },
-    {
-      icon: Lock,
-      title: 'Gate Automation',
-      description: 'Smart gate systems with remote control, access cards, and automatic opening mechanisms.',
-      features: ['Remote Control', 'Access Cards', 'Automatic Gates', 'Intercom Systems']
-    },
-    {
-      icon: Zap,
-      title: 'Smart Lighting',
-      description: 'Intelligent lighting solutions with automated controls, timers, and energy efficiency.',
-      features: ['Auto Timers', 'Motion Control', 'Energy Saving', 'Remote Management']
-    },
-    {
-      icon: Monitor,
-      title: 'Access Control',
-      description: 'Advanced access control systems with biometric scanners, key cards, and visitor management.',
-      features: ['Biometric Scanners', 'Key Card Access', 'Visitor Management', 'Time Tracking']
-    },
-    {
-      icon: Home,
-      title: 'Home Automation',
-      description: 'Complete home automation solutions for convenience, security, and energy management.',
-      features: ['Smart Thermostats', 'Automated Curtains', 'Voice Control', 'Mobile App']
-    }
-  ];
+const services = [
+  {
+    icon: Zap,
+    title: 'Smart Lighting',
+    description: 'Advanced dimming and lighting control solutions for energy efficiency and ambiance customization.',
+    features: [
+      'Adaptive Phase Dimmers',
+      'Forward Phase Dimmers',
+      '0-10V Dimmers',
+      'Keypad Dimmers',
+      'Configurable Dimmers',
+      'Fan Speed Controller',
+      'Retrofit Lighting Solutions'
+    ]
+  },
+  {
+    icon: Shield,
+    title: 'Safety and Security',
+    description: 'Comprehensive safety solutions including surveillance, access control, and secure entry systems.',
+    features: [
+      'Security Sensors',
+      'Video Door Phones',
+      'Digital Door Locks',
+      'CCTV Solutions',
+      'Card Access Door Bell',
+      'Card Access Smart Garage'
+    ]
+  },
+  {
+    icon: Coffee,
+    title: 'Comfort and Convenience',
+    description: 'Smart control systems for a more comfortable and effortless living environment.',
+    features: [
+      'Air Conditioning Control',
+      'Curtain and Blinds Control'
+    ]
+  },
+  {
+    icon: Film,
+    title: 'Entertainment',
+    description: 'Immersive entertainment systems with seamless audio and video distribution.',
+    features: [
+      'Home Theatres',
+      'Audio and Video Distribution System',
+      'Multiroom Audio Systems'
+    ]
+  },
+  {
+    icon: Monitor,
+    title: 'Entrance Automation',
+    description: 'Automated entry solutions for secure and convenient access to your property.',
+    features: []
+  },
+  {
+    icon: Home,
+    title: 'Home Automation',
+    description: 'Centralized control systems with touch screens and smart remotes for managing your home.',
+    features: [
+      'Touch Screen and NEEO Remote',
+      'Smart Home Operating Systems'
+    ]
+  }
+];
+
 
   return (
     <section id="services" className="py-20 bg-gray-50">

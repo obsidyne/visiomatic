@@ -62,8 +62,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">info@visiomatic.com</p>
-                  <p className="text-gray-600">support@visiomatic.com</p>
+                  <p className="text-gray-600">info@visiomatic.in</p>
+                  {/* <p className="text-gray-600">support@visiomatic.in</p> */}
                 </div>
               </div>
               
@@ -73,7 +73,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-1">Address</h4>
-                  <p className="text-gray-600">32/874 A8, Pallichambayil Rd, Chakkalakkal, Palarivattom, Kochi, Kerala 682025</p>
+                  <p className="text-gray-600">Address 43/1851/A9, Peringattu Building, Pallissery Road, Palarivattom P O, Kochi -682025</p>
                   {/* <p className="text-gray-600">Bangalore, Karnataka 560100</p> */}
                 </div>
               </div>

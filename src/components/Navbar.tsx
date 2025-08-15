@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 // import Image from 'react/image';
 import logo from '/visiomatic3.png'; // adjust path
+import logo_text from '/logo_text.png'; // adjust path
 
 import { Shield, Menu, X } from 'lucide-react';
 
@@ -26,28 +27,36 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      }`}>
       <div className="container mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            {/* <Shield className={`w-8 h-8 transition-colors duration-300 ${
-              isScrolled ? 'text-blue-600' : 'text-white'
-            }`} /> */}
-            {/* <Image src = "visiomatic3.png" width = {50} height={50} alt="logo" style={{ objectFit: 'contain' }} /> */}
-             <img
+            <img
               src={logo}
               alt="Visiomatic logo"
               className="h-[35px] w-[35px] mr-[8px] w-auto object-contain"
             />
-            <span className={`text-2xl font-bold transition-colors duration-300 ${
-              isScrolled ? 'text-gray-900' : 'text-white'
-            }`}>
-              Visiomatic
-            </span>
+            <img
+              src={logo_text}
+              alt="Visiomatic logo"
+              className="h-[35px] w-[35px] mr-[8px] w-auto object-contain"
+            />
+            {/* <div className="flex flex-col leading-tight font-sans">
+              <span
+                className={`text-2xl font-bold tracking-wide transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
+                  }`}
+              >
+                VISIOMATIC
+              </span>
+              <span className="text-[10px] font-bold text-black tracking-[0.15em]">
+                INTELLIGENT SMART HOMES
+              </span>
+            </div> */}
           </div>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
@@ -55,9 +64,8 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className={`font-medium transition-colors duration-300 hover:text-blue-600 ${
-                  isScrolled ? 'text-gray-700' : 'text-white hover:text-blue-300'
-                }`}
+                className={`font-medium transition-colors duration-300 hover:text-blue-600 ${isScrolled ? 'text-gray-700' : 'text-white hover:text-blue-300'
+                  }`}
               >
                 {item.name}
               </a>
@@ -71,9 +79,8 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`transition-colors duration-300 ${
-                isScrolled ? 'text-gray-900' : 'text-white'
-              }`}
+              className={`transition-colors duration-300 ${isScrolled ? 'text-gray-900' : 'text-white'
+                }`}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
